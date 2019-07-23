@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Registro">
+<TextView
+    android:textColor="@android:color/white"
+    android:text="Registro"
+    android:textSize="40dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:hint="Nombre de Usuario"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/etcontra"
+        android:layout_width="match_parent"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etcontra2"
+        android:layout_width="match_parent"
+        android:hint="Repita Contraseña"
+        android:textSize="30dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/etcorreo"
+    android:layout_width="match_parent"
+    android:hint="Correo"
+    android:textSize="30dp"
+    android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/boGuardar"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:onClick="onGuardarUser"
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>
